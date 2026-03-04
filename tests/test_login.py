@@ -24,6 +24,7 @@ def test_invalid_login(login_page,userdata,):
 
     expect(login_page.error_message).to_be_visible()
     expect(login_page.error_message).to_contain_text(userdata["error"])
+    #expect(login_page)
 
 
 
